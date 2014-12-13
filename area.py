@@ -1,5 +1,6 @@
 __author__ = 'Vishal'
 
+been_called = True
 import  math
 def area(radius):
     temp = math.pi * radius**2
@@ -34,5 +35,53 @@ l.append('e')
 c = ['f','g']
 l.extend(c)
 print l
+
+lb = ['x','q','d','r']
+lb.sort()
+print lb
+
+s = 'spam'
+t = list(s)
+print t
+
+s = 'pining for the fjords'
+t = s.split()
+print t
+
+s = 'spam-spam-spam'
+t = s.split('-')
+print t
+r = " ".join(t)
+print r
+
+a = 'banana'
+b = 'banana'
+
+print a is b
+
+eng2sp = { 'uno':'one', 'ters':'two', 'three':'tres'}
+print eng2sp
+print eng2sp['ters']
+print eng2sp['uno']
+
+def globalTest():
+    global  been_called
+    been_called = False
+    print been_called
+
+globalTest()
+
+t = tuple()
+print type(t)
+
+t = tuple('plugin')
+print t
+
+addr = 'monty@python.org'
+uname,domain = addr.split('@')
+print uname,domain
+
+def min_max(t):
+    return min(t),max(t)
 
 
