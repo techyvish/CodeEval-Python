@@ -3,6 +3,8 @@ ___author__ = 'Vishal'
 import sys
 import re
 
+from swampy.TurmiteWorld import *
+
 def runprogram():
     # test_cases = open(sys.argv[1], 'r')
     test_cases = open("capitalize.txt", 'r')
@@ -15,12 +17,10 @@ def runprogram():
         for word in list:
             if i != 0:
                 string += " "
-            if word[0]
             string += word
             i += 1
         print string
     test_cases.close()
-
 
 def main():
     runprogram()
